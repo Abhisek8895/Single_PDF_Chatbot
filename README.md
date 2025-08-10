@@ -12,14 +12,16 @@ A Streamlit-based chatbot that lets you upload a **single PDF** and interact wit
 - **Streamlit UI** — Simple, scrollable chat interface with session-based chat history.
 
 ---
-
 ## 📂 Project Structure
-├── app.py # Streamlit application (entrypoint)
-├── utils.py # Helper functions (PDF loading, splitting, embeddings, LLM init)
-├── data/ # Saved uploaded PDFs
-├── requirements.txt # Python dependencies
-├── .env # Environment variables (GOOGLE_API_KEY) — NOT committed
-└── README.md # This file
+```
+├── app.py                 # Streamlit application (entrypoint)
+├── utils.py               # Helper functions (PDF loading, splitting, embeddings, LLM init)
+├── data/                  # Saved uploaded PDFs
+├── requirements.txt       # Python dependencies
+├── .env                   # Environment variables (GOOGLE_API_KEY) — NOT committed
+└── README.md              # This file
+```
+
 
 
 ---
@@ -27,11 +29,13 @@ A Streamlit-based chatbot that lets you upload a **single PDF** and interact wit
 ## ⚙️ Installation
 
 1. **Clone the repository**
+```
 git clone https://github.com/yourusername/pdf-chatbot.git
 cd pdf-chatbot
-
+```
 
 2. **Create and activate a virtual environment**
+```
 python -m venv venv
 
 macOS / Linux
@@ -39,24 +43,29 @@ source venv/bin/activate
 
 Windows
 venv\Scripts\activate
-
+```
 
 3. **Install dependencies**
+```
 pip install -r requirements.txt
+```
+4. **Configure API key**  
+Create a `.env` file in the project root and add:  
 
-4. **Configure API key**
-Create a `.env` file in the project root and add:
-
+```
 GOOGLE_API_KEY=your_google_api_key_here
+```
 
 You can get an API key from **Google AI Studio / Google Generative AI** (follow Google’s instructions for API access).
 
 ---
 
 ## ▶️ Usage
-Start the Streamlit app:
+Start the Streamlit app:  
 
+```
 streamlit run app.py
+```
 
 Open the local URL shown in the terminal (usually `http://localhost:8501`), upload a PDF, then ask questions in the chat input.
 
@@ -80,12 +89,13 @@ Open the local URL shown in the terminal (usually `http://localhost:8501`), uplo
 - google-generativeai
 - faiss-cpu
 - pypdf
-- python-dotenv
+- python-dotenv  
 
-Install with:
+Install with:  
 
+```
 pip install -r requirements.txt
-
+```
 
 ---
 
