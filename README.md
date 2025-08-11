@@ -30,8 +30,8 @@ A Streamlit-based chatbot that lets you upload a **single PDF** and interact wit
 
 1. **Clone the repository**
 ```
-git clone https://github.com/yourusername/pdf-chatbot.git
-cd pdf-chatbot
+git clone https://github.com/Abhisek8895/Single_PDF_Chatbot.git
+cd Single_PDF_Chatbot
 ```
 
 2. **Create and activate a virtual environment**
